@@ -1,0 +1,6 @@
+P1, Q1, PRICE1 = int(input("ProductCode, Quantity and Price"))
+P2 = int(input())
+Q2 = int(input())
+PRICE2 = float(input())
+VALORTOTAL = (Q1*PRICE1)+(Q2*PRICE2)
+print("VALOR A PAGAR: R${:.2f}".format(VALORTOTAL))
