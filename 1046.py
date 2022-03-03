@@ -1,7 +1,12 @@
-from datetime import timedelta
+tempo_jogo = input().split(' ')
+inicio_jogo = int(tempo_jogo[0])
+fim_jogo = int(tempo_jogo[1])
 
-delta = timedelta(hours=24)
+if inicio_jogo<fim_jogo:
+    tempo = fim_jogo = inicio_jogo
+else:
+    tempo = (24-inicio_jogo)+fim_jogo
 
-inicio_jogo, fim_jogo = map(lambda x:int(x),input().split(" "))
-duração = inicio_jogo - fim_jogo
-print(duração)
+print(f"O JOGO DUROU {tempo} HORA(S)")
+
+

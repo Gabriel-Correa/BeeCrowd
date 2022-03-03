@@ -1,17 +1,17 @@
 num1 = int(input())
 num2 = int(input())
+lista_soma = []
+lista_numero = []
+lista_numero.append(num1)
+lista_numero.append(num2)
+lista_numero.sort()
 
-organizar_variavel = [num1, num2]
-lista_numeros = []
 
-organizar_variavel.sort()
-lista_organizada = organizar_variavel
-a, b = lista_organizada
 
-for n in range(a, b):
-    if (n%2) == 1:
-        lista_numeros.append(n)
+for n in range(lista_numero[0]+1, lista_numero[1]):
+     if (n%2) == 1:
+         lista_soma.append(n)
 
-soma_lista = sum(lista_numeros)
+soma_lista = sum(lista_soma)
 
 print(soma_lista)

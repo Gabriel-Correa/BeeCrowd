@@ -1,17 +1,20 @@
-lista_numeros = (input().split(" "))
+numero_de_testes = int(input())
+lista_numeros = []
 
-lista_int = list(map(int, lista_numeros))
+for n in range(numero_de_testes):
+    lista_numeros.append(int(input()))
 
-for numero in lista_int:
+
+for numero in lista_numeros:
     if numero>0:
         if (numero%2) == 0:
-            print("ODD POSITIVE")
-        if (numero%2) == 1:
             print("EVEN POSITIVE")
+        if (numero%2) == 1:
+            print("ODD POSITIVE")
     if numero<0:
         if (numero%2) == 0:
-            print("ODD NEGATIVE")
-        if (numero%2) == 1:
             print("EVEN NEGATIVE")
+        if (numero%2) == 1:
+            print("ODD NEGATIVE")
     if numero == 0:
         print("NULL")
